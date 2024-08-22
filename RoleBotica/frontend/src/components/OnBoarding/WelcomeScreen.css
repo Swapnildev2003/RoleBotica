@@ -1,0 +1,148 @@
+/* src/components/WelcomeScreen.css */
+
+/* Define keyframes for the text animation */
+@keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Apply animation to each word */
+  .rolebotica-text {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    gap: 0.5rem;
+  }
+  
+  .rolebotica-word {
+    opacity: 0;
+    animation: fadeIn 0.6s ease-out forwards;
+    display: inline-block;
+    background: linear-gradient(45deg, #00b4d8, #0077b6); /* Gradient background */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 900; /* Bold font weight */
+  }
+  
+  .rolebotica-word:nth-child(1) {
+    animation-delay: 0.3s; /* Delay for "Welcome" */
+  }
+  
+  .rolebotica-word:nth-child(2) {
+    animation-delay: 0.6s; /* Delay for "To" */
+  }
+  
+  .rolebotica-word:nth-child(3) {
+    animation-delay: 0.9s; /* Delay for "Role" */
+  }
+  
+  .rolebotica-word:nth-child(4) {
+    animation-delay: 1.2s; /* Delay for "Botica" */
+  }
+  
+  /* Header container styling */
+  .header-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center horizontally */
+    justify-content: center; /* Center vertically */
+    min-height: 100vh; /* Full viewport height */
+    text-align: center; /* Center text */
+  }
+  
+  /* Header text styling */
+  .header-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center horizontally */
+  }
+  
+  /* Feature cards styling */
+  .feature-card {
+    background: rgba(255, 255, 255, 0.9); /* Slightly transparent background */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    padding: 2rem;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .feature-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+  }
+  
+  .feature-card img {
+    height: 80px;
+    margin-bottom: 1rem;
+  }
+  
+  .feature-card h3 {
+    color: #0077b6; /* AI-themed color */
+  }
+  
+  /* Call-to-action buttons styling */
+  .cta-button {
+    padding: 1rem 2rem;
+    border-radius: 50px;
+    font-size: 1.125rem; /* Slightly larger text */
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .cta-button:hover {
+    background-color: #023e8a;
+    transform: scale(1.05);
+  }
+  
+  .cta-login {
+    background-color: #023e8a;
+  }
+  
+  .cta-signup {
+    background-color: #00b4d8;
+  }
+  /* src/components/WelcomeScreen.css */
+.header-container {
+    text-align: center;
+}
+
+.header-text {
+    margin-bottom: 2rem;
+}
+
+.cta-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+    font-size: 1.125rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.cta-signup {
+    background-color: #2563EB;
+}
+
+.cta-login {
+    background-color: #1F2937;
+}
+
+.feature-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 0.5rem;
+}
+
+.feature-card {
+    background-color: #ffffff;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}

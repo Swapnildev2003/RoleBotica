@@ -1,0 +1,9 @@
+
+input:focus {
+    outline: none;
+    border-color: #4F46E5; 
+}
+
+button {
+    transition: background-color 0.3s ease;
+}
